@@ -2,178 +2,87 @@
 <html>
 
 <head>
-  
-  
-  <style>
-  
-  body{
-    margin: 0;
-    background:wheat;
-    
-    
-    
-  }
-  
-  
-  #re{
-    background: darkblue;
-    color: white;
-    margin-top: 100px;
-  }
-  
-    h1{
-      background: darkblue;
-      color: white;
-      text-align: center;
-    }
-    p{
-      color: red;
-      margin: 0;
-    }
-    
-    #p{
-      color: lime;
-    }
-    
-    
-    #dv2{
-      background: darkblue;
-      width: 200px;
-      height: 200px;
-      border: 2px solid skyblue;
-      position:relative;
-      
-      
-      
-      
-    }
-    
-    button{
-      
-      margin-top: 80px;
-      margin-left: -130px;
-      position: absolute;
-      background: transparent ;
-      border: 2px solid skyblue;
-      color: white;
-      border-radius: 5px;
-      height: 40px;
-      
-      
-    }
-    
-    input{
-      
-      border-radius: 5px;
-      height: 40px;
-      color: blue;
-      inline: 0px;
-      background: wheat ;
-      border: 2px solid skyblue;
-    }
-    
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculador de Desconto</title>
 
-  
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
- 
-  
-  
-  
-  <title></title>
+    <!-- Materialize Lite CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <style>
+        body {
+            background: wheat;
+        }
 
+        h1 {
+            background: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
 
+        .container {
+            margin-top: 100px;
+        }
 
-<script type="text/javascript" src="https://udbaa.com/bnr.php?section=General&pub=271347&format=300x250&ga=g"></script>
-<noscript><a href="https://yllix.com/publishers/271347" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/300x250.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
+        .input-field input[type="number"],
+        .input-field input[type="text"] {
+            color: blue;
+            border: 2px solid skyblue;
+            border-radius: 5px;
+            height: 40px;
+        }
 
+        .btn {
+            background: darkblue;
+            color: white;
+            border-radius: 5px;
+            height: 40px;
+            line-height: 40px;
+        }
+    </style>
 
-
-
-
-
-
-
-
-
-<script type="text/javascript"> var infolinks_pid = 3387542; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
-
-
-<!-- Affied.com Smart Widget for percentagem -->
-<div id="_adsbyaffied_"></div>
-<script type="text/javascript" var url=document.location.href; src="https://www.affied.com/ad/showjs?wid=126e5c20-8901-11ed-92a7-1da360b38957&type=native&js=1&ref=" + ref></script>
-<script type="text/javascript" var url=document.location.href; src="https://www.affied.com/ad/showpop?wid=126e5c20-8901-11ed-92a7-1da360b38957&ref=" + ref></script>
-<!-- End Affied.com Smart Widget -->
-                                
-                                
-                                
-                                
-                                
-                                
-<script async="async" data-cfasync="false" src="//pl18202104.highcpmrevenuenetwork.com/45d7c1b5bc4f9329bd61f8115eccb128/invoke.js"></script>
-<div id="container-45d7c1b5bc4f9329bd61f8115eccb128"></div>
-
-
-
-
-
-
-
-
-
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7864311651820833"
-     crossorigin="anonymous"></script>
-
-
-<script id="gather_config" type="text/javascript">
+    <!-- Monetização -->
+    <script type="text/javascript" src="https://udbaa.com/bnr.php?section=General&pub=271347&format=300x250&ga=g"></script>
+    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+    <script type="text/javascript" src="https://www.affied.com/ad/showjs?wid=126e5c20-8901-11ed-92a7-1da360b38957&type=native&js=1&ref=" + ref></script>
+    <script type="text/javascript" src="https://www.affied.com/ad/showpop?wid=126e5c20-8901-11ed-92a7-1da360b38957&ref=" + ref></script>
+    <script async="async" data-cfasync="false" src="//pl18202104.highcpmrevenuenetwork.com/45d7c1b5bc4f9329bd61f8115eccb128/invoke.js"></script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7864311651820833" crossorigin="anonymous"></script>
+    <script id="gather_config" type="text/javascript">
         window.Gather_SiteID = "f30e8b22-c2c0-46eb-b0ea-420e2102aa01";
     </script>
     <script id="gather_script" src="https://online.gather.network/gather.app.js"></script>
-  
-
-
-
-
-
-
 
 </head>
+
 <body>
-<h1>calculador de desconto</h1>
-<center>
-<div id="dv1">
-  <div id="dv2">
-<input class="btn" id="campo" type="number" placeholder="valor do produto ">
-<br><br>
-<input  class="btn" id="per" type="text" placeholder="percentagem(%)" maxlength="2">
-<button onclick="cl()">CALCULAR</button>
+    <h1>Calculador de Desconto</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="input-field">
+                            <input id="campo" type="number" placeholder="Valor do produto">
+                            <label for="campo">Valor do produto</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="per" type="text" placeholder="Percentagem (%)">
+                            <label for="per">Percentagem (%)</label>
+                        </div>
+                    </div>
+                    <div class="card-action center-align">
+                        <button class="btn" onclick="calcularDesconto()">CALCULAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div>
-<div id="re" class="btn">
-  <hr>
- </center> 
- 
-  
-</div>
-
-</div>
-	<script type="text/javascript" src="index.js"></script>
-
-
+    <!-- Materialize Lite JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
 </body>
-
-
-<script type="text/javascript">
-var infolinks_pid = 3387542;
-var infolinks_wsid = 0;
-</script>
-<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
-
 
 </html>
